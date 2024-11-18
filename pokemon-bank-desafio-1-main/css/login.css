@@ -1,0 +1,100 @@
+.btn-login {
+  background-color: #E6BC2F !important;
+}
+
+.login-background {
+  background-image: url("../assets/login/login-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.red-border {
+  border: 1px solid rgb(189, 13, 13) !important;
+}
+
+.background-shadow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.card-form {
+  width: 60%;
+  border-radius: 15px;
+  background-color: #ffffff;
+  z-index: 2;
+  display: flex;
+}
+
+.login-form {
+  width: 45%;
+  padding: 35px 60px;
+  margin-bottom: 20px;
+}
+
+.form-fields {
+  margin-top: 20px;
+}
+
+.image-form {
+  width: 55%;
+  background-image: url("../assets/login/form-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15%;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.show-password-position {
+  z-index: 5;
+  position: absolute;
+  top: 25%;
+  right: 10px;
+}
+
+.show-password-position:hover {
+  cursor: pointer !important;
+}
+
+.form-control {
+  border-radius: 5px !important;
+  border-width: 2px;
+}
+
+@media (max-width: 700px) {
+  .image-form {
+    display: none;
+  }
+
+  .card-form {
+    width: 80%;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .card-form {
+    width: 75%;
+  }
+
+  .image-form {
+    width: 45%;
+    background-position: 20%;
+  }
+
+  .login-form {
+    width: 55%;
+  }
+}

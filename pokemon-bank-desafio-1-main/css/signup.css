@@ -1,0 +1,320 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+html {
+  width: 100vw !important;
+}
+
+input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.text-color {
+  color: rgb(167, 204, 236) !important;
+  font-size: 22px;
+}
+
+.title-text {
+  font-size: 56px;
+  font-weight: 800;
+  color: white;
+}
+
+.title-text>span {
+  color: #326bd4;
+}
+
+.signup-wallpaper {
+  background-image: url("../assets/register/register-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.signup-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.card-decoration {
+  position: fixed;
+  height: 80%;
+  width: 7%;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0c0d4c;
+  z-index: 3;
+}
+
+.card-form {
+  position: fixed;
+  height: 80%;
+  width: 55%;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0c0d4c;
+  padding: 4rem 11rem 4rem 4rem;
+  z-index: 3;
+}
+
+.card-img-form {
+  position: fixed;
+  width: 40%;
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.card-img-form>img {
+  height: 120%;
+  margin-left: 5%
+}
+
+/* Secure bars */
+.password-secure-bar-container {
+  position: absolute;
+  padding: 2px;
+  background-color: #4548ac;
+  border-radius: 5px;
+  width: calc(100% - (calc(var(--bs-gutter-x)* .5) * 2));
+  transition: all 0.5s;
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.password-secure-bar-container.visible {
+  transform: translateY(5px);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#password-bar {
+  position: relative;
+  height: 3px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+#password-indications {
+  background-color: #f0f4ff;
+  padding: 10px 14px;
+  transform: translateY(-230px);
+  border-radius: 5px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  color: #2e3a59;
+  border: 1px solid #5f7188;
+}
+
+#password-input:hover ~ #password-indications {
+  transform: translateY(-260px);
+  opacity: 1;
+  visibility: visible;
+}
+
+#password-indications:hover {
+  transform: translateY(-260px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.show-password-position:hover ~ #password-indications {
+  transform: translateY(-260px);
+  opacity: 1;
+  visibility: visible;
+}
+/* Fields styles */
+
+.red-border {
+  box-shadow: 0 0 0 2px #d73232 !important;
+}
+
+.show-password-position {
+  z-index: 5;
+  position: absolute;
+  top: 25%;
+  right: 25px;
+  font-size: 15pt;
+  color: rgb(188, 218, 244);
+}
+
+.show-password-position:hover {
+  cursor: pointer !important;
+}
+
+#confirm-password-input {
+  padding: .75rem 2.5rem .75rem .75rem !important;
+}
+
+#password-input {
+  padding: .75rem 2.5rem .75rem .75rem !important;
+}
+
+.form-control {
+  padding: .75rem !important;
+  font-size: 1.1rem !important;
+  background-color: #475ad7 !important;
+  color: rgb(225, 241, 255) !important;
+  border-width: 0px !important;
+  z-index: 2;
+}
+
+.form-control::placeholder {
+  color: rgb(225, 241, 255) !important;
+}
+
+.create-button {
+  background-color: #326bd4 !important;
+  margin-bottom: 0px !important;
+}
+
+.account-text {
+  color: #1B53BA;
+  font-size: 36pt;
+  font-weight: 800;
+}
+
+.action-buttons>button {
+  width: 45%
+}
+
+.action-buttons>a {
+  width: 45%;
+}
+
+@media (min-width: 1226px) and (max-width: 1405px) {
+  .card-form {
+    padding: 3rem 6rem 3rem 3rem;
+  }
+
+  .card-img-form {
+    width: 38%;
+    right: 6%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1225px) {
+  .card-form {
+    width: 60%;
+    padding: 3rem 5.5rem 3rem 3rem;
+    left: 4%;
+  }
+
+  .card-img-form {
+    width: 37%;
+    height: 45%;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 991px) {
+  .card-form {
+    width: 70%;
+    left: 15%;
+    padding: 3rem;
+  }
+
+  .title-text {
+    font-size: 40px !important;
+  }
+
+  .text-color {
+    font-size: 16px;
+  }
+
+  .card-img-form {
+    display: none;
+  }
+}
+
+@media (max-width: 629px) {
+  .title-text {
+    font-size: 35px !important;
+    margin-bottom: 5px;
+  }
+
+  .text-color {
+    font-size: 15px;
+  }
+
+  .card-form {
+    width: 85%;
+    padding: 2.5rem;
+    left: 7.5%;
+    height: auto;
+  }
+
+  .card-img-form {
+    display: none;
+  }
+
+  .form-control {
+    padding: .6rem !important;
+  }
+}
+
+/* @media (max-width: 1280px) {
+  body {
+    height: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .card-form {
+    width: 90%;
+    position: relative !important;
+    padding: 2rem;
+    top: 20px;
+    transform: translateY(0%);
+    height: auto;
+  }
+
+  body {
+    height: auto;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 1280px) {
+  .card-form {
+    width: 90%;
+    margin-top: 5%;
+    position: initial !important;
+    display: block;
+    padding: 2rem;
+    top: 5%;
+    transform: translateY(0%);
+    height: auto;
+  }
+
+  .card-img-form {
+    position: relative;
+    width: 90%;
+    top: 0%;
+    right: 0;
+    transform: translateY(0%);
+    margin-top: 0px !important;
+  }
+
+  .card-img-form>img {
+    height: auto;
+    width: 100%;
+    margin-left: 0%;
+  }
+} */
