@@ -1,0 +1,62 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .fw-bold {
+    font-size: 1.25rem;
+}
+
+footer p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer .bi {
+    font-size: 1.25rem;
+    vertical-align: middle;
+}
+
+footer .ms-2 {
+    margin-left: 0.5rem;
+}
+
+footer .container .row>div {
+    text-align: left;
+}
+
+footer .text-center {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        text-align: center;
+    }
+
+    footer .container .row>div {
+        margin-bottom: 20px;
+    }
+}

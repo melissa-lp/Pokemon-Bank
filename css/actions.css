@@ -1,0 +1,8 @@
+.motion {
+  width: 300px !important;
+  height: 250px !important;
+}
+
+.motion>div {
+  top: 20px;
+}

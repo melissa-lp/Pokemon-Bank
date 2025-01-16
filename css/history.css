@@ -1,0 +1,189 @@
+.number-column {
+  width: 7%;
+}
+
+.transaction-column {
+  width: 25%;
+}
+
+.amount-column {
+  width: 12%;
+}
+
+.category-column {
+  width: 23%;
+}
+
+.date-column {
+  width: 20%;
+}
+
+#transaction-header {
+  max-height: 80px !important;
+}
+
+.icon {
+  width: 37px;
+  height: 37px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.selected-page>a {
+  background-color: #1b53ba !important;
+  color: white !important;
+}
+
+.salary-icon {
+  background-color: #a4e8a2;
+}
+
+.salary-icon>span {
+  color: #4CAF50;
+}
+
+.bank-transfer-icon {
+  background-color: #b1d0f3;
+}
+
+.bank-transfer-icon>span {
+  color: #1688e6;
+}
+
+.savings-icon {
+  background-color: #ffebb2;
+}
+
+.savings-icon>span {
+  color: #FFC107;
+}
+
+.other-icon {
+  background-color: #d6d6d6;
+}
+
+.other-icon>span {
+  color: #9E9E9E;
+}
+
+.groceries-icon {
+  background-color: #ffc5b2;
+}
+
+.groceries-icon>span {
+  color: #FF5722;
+}
+
+.education-icon {
+  background-color: #b2b9ff;
+}
+
+.education-icon>span {
+  color: #3F51B5;
+}
+
+.entertainment-icon {
+  background-color: #ffb2cb;
+}
+
+.entertainment-icon>span {
+  color: #E91E63;
+}
+
+.health-icon {
+  background-color: #ffb5b2;
+}
+
+.health-icon>span {
+  color: #F44336;
+}
+
+.utilities-icon {
+  background-color: #d9c2b2;
+}
+
+.utilities-icon>span {
+  color: #795548;
+}
+
+.deposit-icon {
+  background-color: #87c696;
+}
+
+.deposit-icon>span {
+  color: #097c24;
+}
+
+.withdraw-icon {
+  background-color: #d78f8f;
+}
+
+.withdraw-icon>span {
+  color: #af1515;
+}
+
+.service-icon {
+  background-color: #6de2d6;
+}
+
+.service-icon>span {
+  color: #06b5a3;
+}
+
+.energy-icon {
+  background-color: #ffebb2;
+}
+
+.energy-icon>span {
+  color: #ffbf00;
+}
+
+.internet-icon {
+  background-color: #ab77e6;
+}
+
+.internet-icon>span {
+  color: #550da7;
+}
+
+.phone-icon {
+  background-color: #f18383;
+}
+
+.phone-icon>span {
+  color: #c20303;
+}
+
+.water-icon {
+  background-color: #83c0f1;
+}
+
+.water-icon>span {
+  color: #0245ff;
+}
+
+.unknow-icon {
+  background-color: #777777;
+}
+
+.unknow-icon>span {
+  color: #e3e3e3;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
